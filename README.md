@@ -1,16 +1,26 @@
  # 🤖 Appium + Robot Framework Test Project
 
-Este projeto contém testes automatizados para aplicações móveis (Android/iOS) utilizando [Appium](https://appium.io/) em conjunto com [Robot Framework](https://robotframework.org/), uma poderosa ferramenta de automação com sintaxe simples e legível.
+This project contains automated tests for mobile applications (Android/iOS) using Appium in combination with Robot Framework, a powerful automation tool with a simple and readable syntax.
+
+
 
 ---
 
-## 🚀 Como executar os testes
+## 🚀 How to run the tests
 
-### 1. Inicie o servidor Appium
+### 1. Start the Appium server
+```bash
+npm init
+npm i appium@2.1.3
 
-### 2. Conecte um emulador ou dispositivo real
+npx appium driver install uiautomator2
 
-### 3. Execute os testes
+npx appium
+```
+
+### 2. Connect an emulator or a real device
+
+### 3. Run the tests
 robot -d results tests/
 
 
