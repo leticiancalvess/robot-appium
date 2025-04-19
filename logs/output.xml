@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.8.0 on win32)" generated="2025-04-18T18:27:18.905793" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.8.0 on win32)" generated="2025-04-19T00:07:46.005597" rpa="false" schemaversion="5">
 <suite id="s1" name="Click" source="C:\Users\letic\Documents\appium\projects\yodapp-robot\tests\click.robot">
-<test id="s1-t1" name="Deve realizar um click simples" line="8">
+<test id="s1-t1" name="Deve realizar um click simples" line="9">
 <kw name="Open Application" owner="AppiumLibrary">
 <arg>http://localhost:4723</arg>
 <arg>platformName=Android</arg>
@@ -18,32 +18,33 @@ Please check https://appium.io/docs/en/2.1/cli/args/
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" start="2025-04-18T18:27:19.145788" elapsed="8.302152"/>
+<status status="PASS" start="2025-04-19T00:07:46.204351" elapsed="10.013027"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="AppiumLibrary">
-<arg>Yodapp</arg>
+<arg>${START}</arg>
+<arg>5</arg>
 <doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" start="2025-04-18T18:27:27.448930" elapsed="5.126279"/>
+<status status="PASS" start="2025-04-19T00:07:56.218377" elapsed="5.085212"/>
 </kw>
 <kw name="Click Text" owner="AppiumLibrary">
-<msg time="2025-04-18T18:27:33.061908" level="INFO">xpath criteria: //*[contains(@text,"QAX")]</msg>
-<arg>QAX</arg>
+<msg time="2025-04-19T00:08:01.776888" level="INFO">xpath criteria: //*[contains(@text,"QAX")]</msg>
+<arg>${START}</arg>
 <doc>Click text identified by ``text``.</doc>
-<status status="PASS" start="2025-04-18T18:27:32.575209" elapsed="0.486699"/>
+<status status="PASS" start="2025-04-19T00:08:01.303589" elapsed="0.473299"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-04-18T18:27:38.069479" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-04-19T00:08:06.791480" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-04-18T18:27:33.061908" elapsed="5.007571"/>
+<status status="PASS" start="2025-04-19T00:08:01.777889" elapsed="5.014094"/>
 </kw>
 <kw name="Close Application" owner="AppiumLibrary">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" start="2025-04-18T18:27:38.069479" elapsed="0.440275"/>
+<status status="PASS" start="2025-04-19T00:08:06.791983" elapsed="0.673272"/>
 </kw>
-<status status="PASS" start="2025-04-18T18:27:19.142741" elapsed="19.367013"/>
+<status status="PASS" start="2025-04-19T00:07:46.202366" elapsed="21.262889"/>
 </test>
-<status status="PASS" start="2025-04-18T18:27:18.907806" elapsed="19.603452"/>
+<status status="PASS" start="2025-04-19T00:07:46.006602" elapsed="21.458653"/>
 </suite>
 <statistics>
 <total>
